@@ -2,15 +2,19 @@ body {
   font-family: sans-serif;
 }
 body header {
-  background-color: rgba(255, 255, 0, 0.6);
+  background-color: #F3D503;
+  width: 100vw;
   height: 50px;
   display: flex;
   align-items: center;
+  padding-left: 100px;
+  font-weight: bold;
+  z-index: 10;
 }
 body header.komaHeader {
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   justify-content: center;
+  padding: 0;
 }
 body main {
   min-height: calc(100vh - 150px);
@@ -39,7 +43,7 @@ body main .cardArea .card .title {
 }
 body main .productionMain {
   scroll-snap-type: y mandatory;
-  height: calc(100vh - 50px);
+  height: 100vh;
   overflow: auto;
   background-color: rgba(200, 200, 200, 0.8);
   -ms-overflow-style: none;
